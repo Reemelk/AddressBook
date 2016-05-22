@@ -1,0 +1,37 @@
+fos_user_security:
+    resource: "@FOSUserBundle/Resources/config/routing/security.xml"
+    prefix: /login
+
+fos_user_profile:
+    resource: "@FOSUserBundle/Resources/config/routing/profile.xml"
+    prefix: /profile
+
+fos_user_register:
+    resource: "@FOSUserBundle/Resources/config/routing/registration.xml"
+    prefix: /register
+
+fos_user_resetting:
+    resource: "@FOSUserBundle/Resources/config/routing/resetting.xml"
+    prefix: /resetting
+
+fos_user_change_password:
+    resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
+    prefix: /profile
+
+homepage:
+    path:     /
+    defaults: { _controller: UserBundle:User:index }
+
+contact_list:
+    path: /contact-list
+    defaults: { _controller: UserBundle:Contact:show }
+
+new_contact:
+    path: /new-contact
+    defaults: { _controller: UserBundle:Contact:new }
+
+show_info:
+    path: /contact-list/{id}
+    defaults: { _controller: UserBundle:Contact:showall }
+    requirements:
+        id: \d+

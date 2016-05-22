@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <table class="table table-bordered" style="margin-top: 10px">
+        <thead>
+        <tr>
+            <th>Contact</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Telephone</th>
+            <th>Website</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            {% for userdata in userdatas %}
+                <td>{{ userdata.contact }}</td>
+                <td>{{ userdata.email }}</td>
+                <td>{{ userdata.address }}</td>
+                <td>{{ userdata.telephone }}</td>
+                <td>{{ userdata.website }}</td>
+            {% endfor %}
+        </tr>
+        </tbody>
+    </table>
+{% endblock %}

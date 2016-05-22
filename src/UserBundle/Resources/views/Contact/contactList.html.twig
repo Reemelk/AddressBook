@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block contactList %}
+    <div class="col-md-12">
+        <ul class="list-group" style="margin-top: 10px">
+            <li class="list-group-item list-group-item-success"><p class="text-center">YOUR CONTACT LIST</p></li>
+            {% for data in datas %}
+                <li class="list-group-item"><a href="{{ path('show_info', { 'id': data.id }) }}"><p class="text-center">{{ data.contact }}</p></a></li>
+            {% endfor %}
+        </ul>
+        <button type="button" class="center-block btn"><a href="{{ path('new_contact') }}">ADD A NEW CONTACT</a></button>
+    </div>
+{% endblock %}
