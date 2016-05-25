@@ -35,3 +35,7 @@ show_info:
     defaults: { _controller: UserBundle:Contact:showall }
     requirements:
         id: \d+
+
+contact_removed:
+    path: /contact-removed/{id}
+    defaults: { _controller: UserBundle:Contact:remove }

@@ -14,20 +14,13 @@
             }
 
             /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-            .row.content {height: 450px}
+            .row.content {height: 1000px}
 
             /* Set gray background color and 100% height */
             .sidenav {
                 padding-top: 20px;
                 background-color: #f1f1f1;
                 height: 100%;
-            }
-
-            /* Set black background color, white text and some padding */
-            footer {
-                background-color: #555;
-                color: white;
-                padding: 15px;
             }
 
             /* On small screens, set height to 'auto' for sidenav and grid */
@@ -56,7 +49,7 @@
         <div class="collapse navbar-collapse" id="myNavbar">
             {% if is_granted('ROLE_USER') or is_granted('ROLE_ADMIN') or is_granted('ROLE_SUPER_ADMIN') %}
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
                     <li><a href="{{ path('fos_user_profile_show') }}">Profile</a></li>
                     <li><a href="{{ path('contact_list') }}">Address Book</a></li>
                  </ul>

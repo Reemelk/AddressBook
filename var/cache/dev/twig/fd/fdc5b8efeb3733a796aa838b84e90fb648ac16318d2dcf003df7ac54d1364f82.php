@@ -21,20 +21,20 @@ class __TwigTemplate_b8c497ca1067482de828ae3f99186bb955d1676e2c5dc5ec2698daf7d78
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_db113080c2f166d8de31bd078fd40c702d13c2f50d70c194b431e7b6b9f37ac7 = $this->env->getExtension("native_profiler");
-        $__internal_db113080c2f166d8de31bd078fd40c702d13c2f50d70c194b431e7b6b9f37ac7->enter($__internal_db113080c2f166d8de31bd078fd40c702d13c2f50d70c194b431e7b6b9f37ac7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "UserBundle:Contact:contactListByUser.html.twig"));
+        $__internal_29f70c009768ae37cda86aea0fec97f1f42d235ff248896bd7caa42fa9c4faac = $this->env->getExtension("native_profiler");
+        $__internal_29f70c009768ae37cda86aea0fec97f1f42d235ff248896bd7caa42fa9c4faac->enter($__internal_29f70c009768ae37cda86aea0fec97f1f42d235ff248896bd7caa42fa9c4faac_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "UserBundle:Contact:contactListByUser.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_db113080c2f166d8de31bd078fd40c702d13c2f50d70c194b431e7b6b9f37ac7->leave($__internal_db113080c2f166d8de31bd078fd40c702d13c2f50d70c194b431e7b6b9f37ac7_prof);
+        $__internal_29f70c009768ae37cda86aea0fec97f1f42d235ff248896bd7caa42fa9c4faac->leave($__internal_29f70c009768ae37cda86aea0fec97f1f42d235ff248896bd7caa42fa9c4faac_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_4ff6a6fc7967422dc6c6cacb4facd50b72d936d35ea21658e5a83fdc81e2c2b2 = $this->env->getExtension("native_profiler");
-        $__internal_4ff6a6fc7967422dc6c6cacb4facd50b72d936d35ea21658e5a83fdc81e2c2b2->enter($__internal_4ff6a6fc7967422dc6c6cacb4facd50b72d936d35ea21658e5a83fdc81e2c2b2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_c36e61466e8c35465db494325d31b5b94b3260a6800430e197cf6a4237a8bf38 = $this->env->getExtension("native_profiler");
+        $__internal_c36e61466e8c35465db494325d31b5b94b3260a6800430e197cf6a4237a8bf38->enter($__internal_c36e61466e8c35465db494325d31b5b94b3260a6800430e197cf6a4237a8bf38_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "    <table class=\"table table-bordered\" style=\"margin-top: 10px\">
@@ -83,9 +83,22 @@ class __TwigTemplate_b8c497ca1067482de828ae3f99186bb955d1676e2c5dc5ec2698daf7d78
         echo "        </tr>
         </tbody>
     </table>
-";
+    ";
+        // line 26
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["userdatas"]) ? $context["userdatas"] : $this->getContext($context, "userdatas")));
+        foreach ($context['_seq'] as $context["_key"] => $context["userdata"]) {
+            // line 27
+            echo "        <button type=\"button\" class=\"center-block btn\"><a href=\"";
+            echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("contact_removed", array("id" => $this->getAttribute($context["userdata"], "id", array()))), "html", null, true);
+            echo "\">DELETE THIS CONTACT</a></button>
+    ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['userdata'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
         
-        $__internal_4ff6a6fc7967422dc6c6cacb4facd50b72d936d35ea21658e5a83fdc81e2c2b2->leave($__internal_4ff6a6fc7967422dc6c6cacb4facd50b72d936d35ea21658e5a83fdc81e2c2b2_prof);
+        $__internal_c36e61466e8c35465db494325d31b5b94b3260a6800430e197cf6a4237a8bf38->leave($__internal_c36e61466e8c35465db494325d31b5b94b3260a6800430e197cf6a4237a8bf38_prof);
 
     }
 
@@ -101,7 +114,7 @@ class __TwigTemplate_b8c497ca1067482de828ae3f99186bb955d1676e2c5dc5ec2698daf7d78
 
     public function getDebugInfo()
     {
-        return array (  83 => 23,  75 => 21,  71 => 20,  67 => 19,  63 => 18,  58 => 17,  54 => 16,  40 => 4,  34 => 3,  11 => 1,);
+        return array (  92 => 27,  88 => 26,  83 => 23,  75 => 21,  71 => 20,  67 => 19,  63 => 18,  58 => 17,  54 => 16,  40 => 4,  34 => 3,  11 => 1,);
     }
 }
 /* {% extends 'base.html.twig' %}*/
@@ -129,5 +142,8 @@ class __TwigTemplate_b8c497ca1067482de828ae3f99186bb955d1676e2c5dc5ec2698daf7d78
 /*         </tr>*/
 /*         </tbody>*/
 /*     </table>*/
+/*     {% for userdata in userdatas %}*/
+/*         <button type="button" class="center-block btn"><a href="{{ path('contact_removed', {'id': userdata.id}) }}">DELETE THIS CONTACT</a></button>*/
+/*     {% endfor %}*/
 /* {% endblock %}*/
 /* */

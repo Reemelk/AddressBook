@@ -21,25 +21,25 @@ class __TwigTemplate_db813093a79fae772b1409391d733619ab51e2e06be1ed910b976cb4ad3
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_c31b89d93c55bd9c8f4285d98b0b331e9cb2a64de4635cfb7ef30031e3861722 = $this->env->getExtension("native_profiler");
-        $__internal_c31b89d93c55bd9c8f4285d98b0b331e9cb2a64de4635cfb7ef30031e3861722->enter($__internal_c31b89d93c55bd9c8f4285d98b0b331e9cb2a64de4635cfb7ef30031e3861722_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@User/Registration/confirmed.html.twig"));
+        $__internal_87f648868a56c7247f891af7b4e1d36b4772efa4385613d707bf593c86729e82 = $this->env->getExtension("native_profiler");
+        $__internal_87f648868a56c7247f891af7b4e1d36b4772efa4385613d707bf593c86729e82->enter($__internal_87f648868a56c7247f891af7b4e1d36b4772efa4385613d707bf593c86729e82_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@User/Registration/confirmed.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_c31b89d93c55bd9c8f4285d98b0b331e9cb2a64de4635cfb7ef30031e3861722->leave($__internal_c31b89d93c55bd9c8f4285d98b0b331e9cb2a64de4635cfb7ef30031e3861722_prof);
+        $__internal_87f648868a56c7247f891af7b4e1d36b4772efa4385613d707bf593c86729e82->leave($__internal_87f648868a56c7247f891af7b4e1d36b4772efa4385613d707bf593c86729e82_prof);
 
     }
 
     // line 5
     public function block_fos_user_content($context, array $blocks = array())
     {
-        $__internal_ab443b66d1964746d56ae115f088fe7d817ee1396697475cce44165d97e97517 = $this->env->getExtension("native_profiler");
-        $__internal_ab443b66d1964746d56ae115f088fe7d817ee1396697475cce44165d97e97517->enter($__internal_ab443b66d1964746d56ae115f088fe7d817ee1396697475cce44165d97e97517_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "fos_user_content"));
+        $__internal_47a8e121f06442ed862fb8bc2255f1f0b2bfe726981d1ff6512ef9d9fae623ba = $this->env->getExtension("native_profiler");
+        $__internal_47a8e121f06442ed862fb8bc2255f1f0b2bfe726981d1ff6512ef9d9fae623ba->enter($__internal_47a8e121f06442ed862fb8bc2255f1f0b2bfe726981d1ff6512ef9d9fae623ba_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "fos_user_content"));
 
         // line 6
-        echo "    <p>";
+        echo "    <div class=\"alert alert-success\" role=\"alert\" style=\"margin-top: 10px\"><p class=\"text-center\">";
         echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("registration.confirmed", array("%username%" => $this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "username", array())), "FOSUserBundle"), "html", null, true);
-        echo "</p>
+        echo "</p></div>
     ";
         // line 7
         if ((isset($context["targetUrl"]) ? $context["targetUrl"] : $this->getContext($context, "targetUrl"))) {
@@ -52,7 +52,7 @@ class __TwigTemplate_db813093a79fae772b1409391d733619ab51e2e06be1ed910b976cb4ad3
     ";
         }
         
-        $__internal_ab443b66d1964746d56ae115f088fe7d817ee1396697475cce44165d97e97517->leave($__internal_ab443b66d1964746d56ae115f088fe7d817ee1396697475cce44165d97e97517_prof);
+        $__internal_47a8e121f06442ed862fb8bc2255f1f0b2bfe726981d1ff6512ef9d9fae623ba->leave($__internal_47a8e121f06442ed862fb8bc2255f1f0b2bfe726981d1ff6512ef9d9fae623ba_prof);
 
     }
 
@@ -76,7 +76,7 @@ class __TwigTemplate_db813093a79fae772b1409391d733619ab51e2e06be1ed910b976cb4ad3
 /* {% trans_default_domain 'FOSUserBundle' %}*/
 /* */
 /* {% block fos_user_content %}*/
-/*     <p>{{ 'registration.confirmed'|trans({'%username%': user.username}) }}</p>*/
+/*     <div class="alert alert-success" role="alert" style="margin-top: 10px"><p class="text-center">{{ 'registration.confirmed'|trans({'%username%': user.username}) }}</p></div>*/
 /*     {% if targetUrl %}*/
 /*     <p><a href="{{ targetUrl }}">{{ 'registration.back'|trans }}</a></p>*/
 /*     {% endif %}*/

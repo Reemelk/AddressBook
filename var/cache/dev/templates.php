@@ -83,6 +83,7 @@
   'UserBundle:ChangePassword:changePassword_content.html.twig' => 'C:\\wamp\\www\\book\\src\\UserBundle/Resources/views/ChangePassword/changePassword_content.html.twig',
   'UserBundle:Contact:contactList.html.twig' => 'C:\\wamp\\www\\book\\src\\UserBundle/Resources/views/Contact/contactList.html.twig',
   'UserBundle:Contact:contactListByUser.html.twig' => 'C:\\wamp\\www\\book\\src\\UserBundle/Resources/views/Contact/contactListByUser.html.twig',
+  'UserBundle:Contact:deleteContact.html.twig' => 'C:\\wamp\\www\\book\\src\\UserBundle/Resources/views/Contact/deleteContact.html.twig',
   'UserBundle:Form:form.html.twig' => 'C:\\wamp\\www\\book\\src\\UserBundle/Resources/views/Form/form.html.twig',
   'UserBundle::layout.html.twig' => 'C:\\wamp\\www\\book\\src\\UserBundle/Resources/views/layout.html.twig',
   'UserBundle:Profile:edit.html.twig' => 'C:\\wamp\\www\\book\\src\\UserBundle/Resources/views/Profile/edit.html.twig',

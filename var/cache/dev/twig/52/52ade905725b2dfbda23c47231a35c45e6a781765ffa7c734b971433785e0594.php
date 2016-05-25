@@ -21,25 +21,25 @@ class __TwigTemplate_da2082a9e59bc7213074587973481d15585cf279a9440e3384ea00a2d9f
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_0a20f5ee261a520a831c35f15abe054b9fed3b9adb67c66ad2c7e8c8ec860249 = $this->env->getExtension("native_profiler");
-        $__internal_0a20f5ee261a520a831c35f15abe054b9fed3b9adb67c66ad2c7e8c8ec860249->enter($__internal_0a20f5ee261a520a831c35f15abe054b9fed3b9adb67c66ad2c7e8c8ec860249_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "UserBundle:Registration:confirmed.html.twig"));
+        $__internal_64446fb2d212686325d0f2c31b65fd4f1ecf26da9adc2412948a1a0613f65811 = $this->env->getExtension("native_profiler");
+        $__internal_64446fb2d212686325d0f2c31b65fd4f1ecf26da9adc2412948a1a0613f65811->enter($__internal_64446fb2d212686325d0f2c31b65fd4f1ecf26da9adc2412948a1a0613f65811_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "UserBundle:Registration:confirmed.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_0a20f5ee261a520a831c35f15abe054b9fed3b9adb67c66ad2c7e8c8ec860249->leave($__internal_0a20f5ee261a520a831c35f15abe054b9fed3b9adb67c66ad2c7e8c8ec860249_prof);
+        $__internal_64446fb2d212686325d0f2c31b65fd4f1ecf26da9adc2412948a1a0613f65811->leave($__internal_64446fb2d212686325d0f2c31b65fd4f1ecf26da9adc2412948a1a0613f65811_prof);
 
     }
 
     // line 5
     public function block_fos_user_content($context, array $blocks = array())
     {
-        $__internal_a311253d551c03536da36d4e10150642a04945205921c17d538a4ca9bec89ba3 = $this->env->getExtension("native_profiler");
-        $__internal_a311253d551c03536da36d4e10150642a04945205921c17d538a4ca9bec89ba3->enter($__internal_a311253d551c03536da36d4e10150642a04945205921c17d538a4ca9bec89ba3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "fos_user_content"));
+        $__internal_74e5d8745bb9dffb78f592e75b2765721a0fdea6e361076fded96f74ad920c05 = $this->env->getExtension("native_profiler");
+        $__internal_74e5d8745bb9dffb78f592e75b2765721a0fdea6e361076fded96f74ad920c05->enter($__internal_74e5d8745bb9dffb78f592e75b2765721a0fdea6e361076fded96f74ad920c05_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "fos_user_content"));
 
         // line 6
-        echo "    <p>";
+        echo "    <div class=\"alert alert-success\" role=\"alert\" style=\"margin-top: 10px\"><p class=\"text-center\">";
         echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("registration.confirmed", array("%username%" => $this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "username", array())), "FOSUserBundle"), "html", null, true);
-        echo "</p>
+        echo "</p></div>
     ";
         // line 7
         if ((isset($context["targetUrl"]) ? $context["targetUrl"] : $this->getContext($context, "targetUrl"))) {
@@ -52,7 +52,7 @@ class __TwigTemplate_da2082a9e59bc7213074587973481d15585cf279a9440e3384ea00a2d9f
     ";
         }
         
-        $__internal_a311253d551c03536da36d4e10150642a04945205921c17d538a4ca9bec89ba3->leave($__internal_a311253d551c03536da36d4e10150642a04945205921c17d538a4ca9bec89ba3_prof);
+        $__internal_74e5d8745bb9dffb78f592e75b2765721a0fdea6e361076fded96f74ad920c05->leave($__internal_74e5d8745bb9dffb78f592e75b2765721a0fdea6e361076fded96f74ad920c05_prof);
 
     }
 
@@ -76,7 +76,7 @@ class __TwigTemplate_da2082a9e59bc7213074587973481d15585cf279a9440e3384ea00a2d9f
 /* {% trans_default_domain 'FOSUserBundle' %}*/
 /* */
 /* {% block fos_user_content %}*/
-/*     <p>{{ 'registration.confirmed'|trans({'%username%': user.username}) }}</p>*/
+/*     <div class="alert alert-success" role="alert" style="margin-top: 10px"><p class="text-center">{{ 'registration.confirmed'|trans({'%username%': user.username}) }}</p></div>*/
 /*     {% if targetUrl %}*/
 /*     <p><a href="{{ targetUrl }}">{{ 'registration.back'|trans }}</a></p>*/
 /*     {% endif %}*/

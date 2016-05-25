@@ -19,8 +19,8 @@ class __TwigTemplate_d1c55fb8fdddfee1380fab53a2b132f592a688d5adfafd40ecdde4f6cf4
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_9146a5172dd2efa095f9118016e9e8f43061f25718d586b29ef1a2e53831652f = $this->env->getExtension("native_profiler");
-        $__internal_9146a5172dd2efa095f9118016e9e8f43061f25718d586b29ef1a2e53831652f->enter($__internal_9146a5172dd2efa095f9118016e9e8f43061f25718d586b29ef1a2e53831652f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
+        $__internal_78ca2af41e57eecd8f38732b51398a41c798df22870f383c9b8118dc563bf62b = $this->env->getExtension("native_profiler");
+        $__internal_78ca2af41e57eecd8f38732b51398a41c798df22870f383c9b8118dc563bf62b->enter($__internal_78ca2af41e57eecd8f38732b51398a41c798df22870f383c9b8118dc563bf62b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -32,7 +32,7 @@ class __TwigTemplate_d1c55fb8fdddfee1380fab53a2b132f592a688d5adfafd40ecdde4f6cf4
     ";
         // line 7
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 43
+        // line 36
         echo "</head>
 <body>
 
@@ -48,45 +48,45 @@ class __TwigTemplate_d1c55fb8fdddfee1380fab53a2b132f592a688d5adfafd40ecdde4f6cf4
         </div>
         <div class=\"collapse navbar-collapse\" id=\"myNavbar\">
             ";
-        // line 57
+        // line 50
         if ((($this->env->getExtension('security')->isGranted("ROLE_USER") || $this->env->getExtension('security')->isGranted("ROLE_ADMIN")) || $this->env->getExtension('security')->isGranted("ROLE_SUPER_ADMIN"))) {
-            // line 58
+            // line 51
             echo "                <ul class=\"nav navbar-nav\">
-                    <li class=\"active\"><a href=\"#\">Home</a></li>
+                    <li><a href=\"#\">Home</a></li>
                     <li><a href=\"";
-            // line 60
+            // line 53
             echo $this->env->getExtension('routing')->getPath("fos_user_profile_show");
             echo "\">Profile</a></li>
                     <li><a href=\"";
-            // line 61
+            // line 54
             echo $this->env->getExtension('routing')->getPath("contact_list");
             echo "\">Address Book</a></li>
                  </ul>
                 <ul class=\"nav navbar-nav navbar-right\">
                     <li><a href=\"";
-            // line 64
+            // line 57
             echo $this->env->getExtension('routing')->getPath("fos_user_security_logout");
             echo "\">Log Out</a></li>
                 </ul>
             ";
         } else {
-            // line 67
+            // line 60
             echo "                <ul class=\"nav navbar-nav\">
                     <li class=\"active\"><a href=\"#\">Welcome</a></li>
                 </ul>
                 <ul class=\"nav navbar-nav navbar-right\">
                     <li><a href=\"";
-            // line 71
+            // line 64
             echo $this->env->getExtension('routing')->getPath("fos_user_registration_register");
             echo "\">Sign Up</a></li>
                     <li><a href=\"";
-            // line 72
+            // line 65
             echo $this->env->getExtension('routing')->getPath("fos_user_security_login");
             echo "\">Log In</a></li>
                 </ul>
             ";
         }
-        // line 75
+        // line 68
         echo "        </div>
     </div>
 </nav>
@@ -98,12 +98,12 @@ class __TwigTemplate_d1c55fb8fdddfee1380fab53a2b132f592a688d5adfafd40ecdde4f6cf4
         </div>
         <div class=\"col-sm-8 text-left\">
             ";
-        // line 85
+        // line 78
         $this->displayBlock('body', $context, $blocks);
-        // line 86
+        // line 79
         echo "            ";
         $this->displayBlock('contactList', $context, $blocks);
-        // line 87
+        // line 80
         echo "        </div>
         <div class=\"col-sm-2 sidenav\">
 
@@ -112,22 +112,22 @@ class __TwigTemplate_d1c55fb8fdddfee1380fab53a2b132f592a688d5adfafd40ecdde4f6cf4
 </div>
 
 ";
-        // line 94
+        // line 87
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 98
+        // line 91
         echo "</body>
 </html>
 ";
         
-        $__internal_9146a5172dd2efa095f9118016e9e8f43061f25718d586b29ef1a2e53831652f->leave($__internal_9146a5172dd2efa095f9118016e9e8f43061f25718d586b29ef1a2e53831652f_prof);
+        $__internal_78ca2af41e57eecd8f38732b51398a41c798df22870f383c9b8118dc563bf62b->leave($__internal_78ca2af41e57eecd8f38732b51398a41c798df22870f383c9b8118dc563bf62b_prof);
 
     }
 
     // line 7
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_256d3be62be00faf5f1e67a458e1967a87f111e8280df6fe281e3920762ba4cc = $this->env->getExtension("native_profiler");
-        $__internal_256d3be62be00faf5f1e67a458e1967a87f111e8280df6fe281e3920762ba4cc->enter($__internal_256d3be62be00faf5f1e67a458e1967a87f111e8280df6fe281e3920762ba4cc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_d23af0f6aa35f1709b15380dbf1ec451dc61a4d1e1cd8c89f90ad2be774a961c = $this->env->getExtension("native_profiler");
+        $__internal_d23af0f6aa35f1709b15380dbf1ec451dc61a4d1e1cd8c89f90ad2be774a961c->enter($__internal_d23af0f6aa35f1709b15380dbf1ec451dc61a4d1e1cd8c89f90ad2be774a961c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         // line 8
         echo "        <link rel=\"stylesheet\" href=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css\">
@@ -139,20 +139,13 @@ class __TwigTemplate_d1c55fb8fdddfee1380fab53a2b132f592a688d5adfafd40ecdde4f6cf4
             }
 
             /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-            .row.content {height: 450px}
+            .row.content {height: 1000px}
 
             /* Set gray background color and 100% height */
             .sidenav {
                 padding-top: 20px;
                 background-color: #f1f1f1;
                 height: 100%;
-            }
-
-            /* Set black background color, white text and some padding */
-            footer {
-                background-color: #555;
-                color: white;
-                padding: 15px;
             }
 
             /* On small screens, set height to 'auto' for sidenav and grid */
@@ -166,44 +159,44 @@ class __TwigTemplate_d1c55fb8fdddfee1380fab53a2b132f592a688d5adfafd40ecdde4f6cf4
         </style>
     ";
         
-        $__internal_256d3be62be00faf5f1e67a458e1967a87f111e8280df6fe281e3920762ba4cc->leave($__internal_256d3be62be00faf5f1e67a458e1967a87f111e8280df6fe281e3920762ba4cc_prof);
+        $__internal_d23af0f6aa35f1709b15380dbf1ec451dc61a4d1e1cd8c89f90ad2be774a961c->leave($__internal_d23af0f6aa35f1709b15380dbf1ec451dc61a4d1e1cd8c89f90ad2be774a961c_prof);
 
     }
 
-    // line 85
+    // line 78
     public function block_body($context, array $blocks = array())
     {
-        $__internal_e6b70f84f0517b7013d556852f9ab470a647b68f9d6e5a7e329a49c08793e3c0 = $this->env->getExtension("native_profiler");
-        $__internal_e6b70f84f0517b7013d556852f9ab470a647b68f9d6e5a7e329a49c08793e3c0->enter($__internal_e6b70f84f0517b7013d556852f9ab470a647b68f9d6e5a7e329a49c08793e3c0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_0edb095ad1550771b2c7fc2e766c1f9dbd4160fc1bdbc5afacc5ae58c6e1cef2 = $this->env->getExtension("native_profiler");
+        $__internal_0edb095ad1550771b2c7fc2e766c1f9dbd4160fc1bdbc5afacc5ae58c6e1cef2->enter($__internal_0edb095ad1550771b2c7fc2e766c1f9dbd4160fc1bdbc5afacc5ae58c6e1cef2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         
-        $__internal_e6b70f84f0517b7013d556852f9ab470a647b68f9d6e5a7e329a49c08793e3c0->leave($__internal_e6b70f84f0517b7013d556852f9ab470a647b68f9d6e5a7e329a49c08793e3c0_prof);
+        $__internal_0edb095ad1550771b2c7fc2e766c1f9dbd4160fc1bdbc5afacc5ae58c6e1cef2->leave($__internal_0edb095ad1550771b2c7fc2e766c1f9dbd4160fc1bdbc5afacc5ae58c6e1cef2_prof);
 
     }
 
-    // line 86
+    // line 79
     public function block_contactList($context, array $blocks = array())
     {
-        $__internal_4af1e6a08836df0d1949176c8c25a50322a2cd67015922b41cad6a74aa304c8a = $this->env->getExtension("native_profiler");
-        $__internal_4af1e6a08836df0d1949176c8c25a50322a2cd67015922b41cad6a74aa304c8a->enter($__internal_4af1e6a08836df0d1949176c8c25a50322a2cd67015922b41cad6a74aa304c8a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "contactList"));
+        $__internal_89755fac5714034ec026d601af5c804ff40cd19ec67d1fa6cbf264d6bf761ca7 = $this->env->getExtension("native_profiler");
+        $__internal_89755fac5714034ec026d601af5c804ff40cd19ec67d1fa6cbf264d6bf761ca7->enter($__internal_89755fac5714034ec026d601af5c804ff40cd19ec67d1fa6cbf264d6bf761ca7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "contactList"));
 
         
-        $__internal_4af1e6a08836df0d1949176c8c25a50322a2cd67015922b41cad6a74aa304c8a->leave($__internal_4af1e6a08836df0d1949176c8c25a50322a2cd67015922b41cad6a74aa304c8a_prof);
+        $__internal_89755fac5714034ec026d601af5c804ff40cd19ec67d1fa6cbf264d6bf761ca7->leave($__internal_89755fac5714034ec026d601af5c804ff40cd19ec67d1fa6cbf264d6bf761ca7_prof);
 
     }
 
-    // line 94
+    // line 87
     public function block_javascripts($context, array $blocks = array())
     {
-        $__internal_be488ef2f86203ac4958fa83079f7fc0910f6f318df32157b9511cbd1dda7bf9 = $this->env->getExtension("native_profiler");
-        $__internal_be488ef2f86203ac4958fa83079f7fc0910f6f318df32157b9511cbd1dda7bf9->enter($__internal_be488ef2f86203ac4958fa83079f7fc0910f6f318df32157b9511cbd1dda7bf9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_5b7643f787001fc2b8a3a820acb40ea84952383867dcc8ff3e7d05cbd33b4b7e = $this->env->getExtension("native_profiler");
+        $__internal_5b7643f787001fc2b8a3a820acb40ea84952383867dcc8ff3e7d05cbd33b4b7e->enter($__internal_5b7643f787001fc2b8a3a820acb40ea84952383867dcc8ff3e7d05cbd33b4b7e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 95
+        // line 88
         echo "    <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js\"></script>
     <script src=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js\"></script>
 ";
         
-        $__internal_be488ef2f86203ac4958fa83079f7fc0910f6f318df32157b9511cbd1dda7bf9->leave($__internal_be488ef2f86203ac4958fa83079f7fc0910f6f318df32157b9511cbd1dda7bf9_prof);
+        $__internal_5b7643f787001fc2b8a3a820acb40ea84952383867dcc8ff3e7d05cbd33b4b7e->leave($__internal_5b7643f787001fc2b8a3a820acb40ea84952383867dcc8ff3e7d05cbd33b4b7e_prof);
 
     }
 
@@ -219,7 +212,7 @@ class __TwigTemplate_d1c55fb8fdddfee1380fab53a2b132f592a688d5adfafd40ecdde4f6cf4
 
     public function getDebugInfo()
     {
-        return array (  202 => 95,  196 => 94,  185 => 86,  174 => 85,  133 => 8,  127 => 7,  118 => 98,  116 => 94,  107 => 87,  104 => 86,  102 => 85,  90 => 75,  84 => 72,  80 => 71,  74 => 67,  68 => 64,  62 => 61,  58 => 60,  54 => 58,  52 => 57,  36 => 43,  34 => 7,  26 => 1,);
+        return array (  195 => 88,  189 => 87,  178 => 79,  167 => 78,  133 => 8,  127 => 7,  118 => 91,  116 => 87,  107 => 80,  104 => 79,  102 => 78,  90 => 68,  84 => 65,  80 => 64,  74 => 60,  68 => 57,  62 => 54,  58 => 53,  54 => 51,  52 => 50,  36 => 36,  34 => 7,  26 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -238,20 +231,13 @@ class __TwigTemplate_d1c55fb8fdddfee1380fab53a2b132f592a688d5adfafd40ecdde4f6cf4
 /*             }*/
 /* */
 /*             /* Set height of the grid so .sidenav can be 100% (adjust as needed) *//* */
-/*             .row.content {height: 450px}*/
+/*             .row.content {height: 1000px}*/
 /* */
 /*             /* Set gray background color and 100% height *//* */
 /*             .sidenav {*/
 /*                 padding-top: 20px;*/
 /*                 background-color: #f1f1f1;*/
 /*                 height: 100%;*/
-/*             }*/
-/* */
-/*             /* Set black background color, white text and some padding *//* */
-/*             footer {*/
-/*                 background-color: #555;*/
-/*                 color: white;*/
-/*                 padding: 15px;*/
 /*             }*/
 /* */
 /*             /* On small screens, set height to 'auto' for sidenav and grid *//* */
@@ -280,7 +266,7 @@ class __TwigTemplate_d1c55fb8fdddfee1380fab53a2b132f592a688d5adfafd40ecdde4f6cf4
 /*         <div class="collapse navbar-collapse" id="myNavbar">*/
 /*             {% if is_granted('ROLE_USER') or is_granted('ROLE_ADMIN') or is_granted('ROLE_SUPER_ADMIN') %}*/
 /*                 <ul class="nav navbar-nav">*/
-/*                     <li class="active"><a href="#">Home</a></li>*/
+/*                     <li><a href="#">Home</a></li>*/
 /*                     <li><a href="{{ path('fos_user_profile_show') }}">Profile</a></li>*/
 /*                     <li><a href="{{ path('contact_list') }}">Address Book</a></li>*/
 /*                  </ul>*/

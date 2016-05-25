@@ -305,9 +305,17 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'UserBundle\\Controller\\ContactController::newAction',  '_route' => 'new_contact',);
         }
 
-        // show_info
-        if (0 === strpos($pathinfo, '/contact-list') && preg_match('#^/contact\\-list/(?P<id>\\d+)$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'show_info')), array (  '_controller' => 'UserBundle\\Controller\\ContactController::showallAction',));
+        if (0 === strpos($pathinfo, '/contact-')) {
+            // show_info
+            if (0 === strpos($pathinfo, '/contact-list') && preg_match('#^/contact\\-list/(?P<id>\\d+)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'show_info')), array (  '_controller' => 'UserBundle\\Controller\\ContactController::showallAction',));
+            }
+
+            // contact_removed
+            if (0 === strpos($pathinfo, '/contact-removed') && preg_match('#^/contact\\-removed/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'contact_removed')), array (  '_controller' => 'UserBundle\\Controller\\ContactController::removeAction',));
+            }
+
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();

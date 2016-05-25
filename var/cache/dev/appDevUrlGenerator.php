@@ -53,6 +53,7 @@ class appDevUrlGenerator extends Symfony\Component\Routing\Generator\UrlGenerato
         'contact_list' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'UserBundle\\Controller\\ContactController::showAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/contact-list',    ),  ),  4 =>   array (  ),  5 =>   array (  ),),
         'new_contact' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'UserBundle\\Controller\\ContactController::newAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/new-contact',    ),  ),  4 =>   array (  ),  5 =>   array (  ),),
         'show_info' => array (  0 =>   array (    0 => 'id',  ),  1 =>   array (    '_controller' => 'UserBundle\\Controller\\ContactController::showallAction',  ),  2 =>   array (    'id' => '\\d+',  ),  3 =>   array (    0 =>     array (      0 => 'variable',      1 => '/',      2 => '\\d+',      3 => 'id',    ),    1 =>     array (      0 => 'text',      1 => '/contact-list',    ),  ),  4 =>   array (  ),  5 =>   array (  ),),
+        'contact_removed' => array (  0 =>   array (    0 => 'id',  ),  1 =>   array (    '_controller' => 'UserBundle\\Controller\\ContactController::removeAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'variable',      1 => '/',      2 => '[^/]++',      3 => 'id',    ),    1 =>     array (      0 => 'text',      1 => '/contact-removed',    ),  ),  4 =>   array (  ),  5 =>   array (  ),),
     );
         }
     }

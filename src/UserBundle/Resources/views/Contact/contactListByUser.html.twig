@@ -23,4 +23,7 @@
         </tr>
         </tbody>
     </table>
+    {% for userdata in userdatas %}
+        <button type="button" class="center-block btn"><a href="{{ path('contact_removed', {'id': userdata.id}) }}">DELETE THIS CONTACT</a></button>
+    {% endfor %}
 {% endblock %}

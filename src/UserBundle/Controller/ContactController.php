@@ -10,6 +10,7 @@
 
     class ContactController extends Controller
     {
+        /* ajout d'un utilisateur*/
         public function newAction(Request $request)
         {
             $addressBook = new AddressBook();
@@ -31,6 +32,7 @@
             ));
         }
 
+        /* Affiche la liste de contact de l'utilisateur en question */
         public function showAction()
         {
             $id = $this->getUser()->getId();
@@ -40,11 +42,19 @@
                 array('datas' => $datas)
             );
         }
-        public function updateAction()
-        {
 
+        /* Supprime le contact selectionné */
+        public function removeAction($id)
+        {
+            $userdatas = $this->getDoctrine()->getRepository("UserBundle:AddressBook")->find($id);
+            $em = $this->getDoctrine()->getManager();
+            $em->remove($userdatas);
+            $em->flush();
+
+            return $this->render('UserBundle:Contact:deleteContact.html.twig');
         }
 
+        /* Affiche les informations du contact selectionné */
         public function showallAction($id)
         {
             $userdatas = $this->getDoctrine()->getRepository("UserBundle:AddressBook")->findById($id);

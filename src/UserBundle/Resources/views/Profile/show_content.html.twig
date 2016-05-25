@@ -2,23 +2,21 @@
 
 {% block body %}
         <div class="fos_user_user_show" style="margin-top: 10px;text-align: center">
-            <div class="col-md-8">
-                <table class="table table-bordered" style="margin-top: 10px">
-                    <thead>
-                    <tr>
-                        <th>{{ 'profile.show.username'|trans }}</th>
-                        <td>{{ user.username }}</td>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th>{{ 'profile.show.email'|trans }}</th>
-                        <td>{{ user.email }}</td>
-                    </tr>
-                    </tbody>
-                </table>
-                <button type="button" class="btn"><a href="{{ path('fos_user_profile_edit') }}">UPDATE PROFILE</a></button>
-            </div>
+            <table class="table table-bordered" style="margin-top: 10px">
+                <thead>
+                <tr>
+                    <th>{{ 'profile.show.username'|trans }}</th>
+                    <td>{{ user.username }}</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th>{{ 'profile.show.email'|trans }}</th>
+                    <td>{{ user.email }}</td>
+                </tr>
+                </tbody>
+            </table>
+            <button type="button" class="btn"><a href="{{ path('fos_user_profile_edit') }}">UPDATE PROFILE</a></button>
         </div>
 {% endblock %}
 
